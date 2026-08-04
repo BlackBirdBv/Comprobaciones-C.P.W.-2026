@@ -8,6 +8,8 @@
     <meta name="description" content="Sitio web de una soda & restaurante (Sabores del Barrio)">
     <meta name="keywords" content="Cafe, almuersos, desayuno, sabor">
 
+    <link rel="icon" href="recursos/gaseosa.png">
+
     <title>Sabores del Barrio</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
             <ul style="display: flex; list-style: none; font-size: 18px;">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">&nbsp; Servicios</a></li>
-                <li><a href="contacto.html">&nbsp; Contactos</a></li>
+                <li><a href="contacto.html" target="_blank">&nbsp; Pedidos</a></li>
                 <li><a href="nosotros.html">&nbsp; Nosotros</a></li>
             </ul>
         </nav>
@@ -45,6 +47,10 @@
 
                     <label for="telefono">Teléfono *</label><br>
                     <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Ocho dígitos, sin espacios ni guiones" placeholder="88888888" required>
+                    <br><br>
+
+                    <label for="direccion">Direccion *</label><br>
+                    <input type="text" id="direccion" name="nombre" minlength="3" maxlength="300" placeholder="Ej:del la iglesia san martin 50mts sur" required>
                     <br><br>
 
                     <fieldset>

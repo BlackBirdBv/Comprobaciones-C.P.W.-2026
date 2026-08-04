@@ -8,6 +8,8 @@
     <meta name="description" content="Sitio web de una soda & restaurante (Sabores del Barrio)">
     <meta name="keywords" content="Cafe, almuersos, desayuno, sabor">
 
+    <link rel="icon" href="recursos/gaseosa.png">
+
     <title>Sabores del Barrio</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
             <ul style="display: flex; list-style: none; font-size: 18px;">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">&nbsp; Servicios</a></li>
-                <li><a href="contacto.html">&nbsp; Contactos</a></li>
+                <li><a href="contacto.html" target="_blank">&nbsp; Pedidos</a></li>
                 <li><a href="nosotros.html">&nbsp; Nosotros</a></li>
             </ul>
         </nav>
@@ -35,7 +37,7 @@
 
             <section>
                 <h2>Patillos</h2>
-                <ol>
+                <ul>
                     <li>Hamb Corriente...........................₡1000: &nbsp; Disponible</li>
                     <li>Super Hamb...............................₡2000: &nbsp; Disponible</li>
                     <li>Papas Grandes............................₡1400: &nbsp; Agotado</li>
@@ -46,30 +48,84 @@
                     <li>Hot Dog..................................₡1200: &nbsp; Disponible</li>
                     <li>Nachos Mixtos............................₡2600: &nbsp; Disponible</li>
                     <li>Patacones Locos..........................₡1800: &nbsp; Agotado</li>
-                </ol>
+                </ul>
             </section>
 
             <section>
-                <h2>Bebidas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bebida</th>
+                            <th>Alcohol</th>
+                            <th>precio</th>
+                            <th>Disponible</th>
+                        </tr>
+                    </thead>
 
-                <h3>Cervezas</h3>
-                <ol>
-                    <li>Cacique...................................₡1500: &nbsp; Agotado</li>
-                    <li>Chiliguaro................................₡2200: &nbsp; Disponible</li>
-                    <li>Birra(Nacional)...........................₡1000: &nbsp; Disponible</li>
-                    <li>Birra(Internacional)......................₡2200: &nbsp; Disponible</li>
-                    <li>ron.......................................₡2200: &nbsp; Disponible</li>
-                    <li>wiskey....................................₡2200: &nbsp; Disponible</li>
-                </ol>
+                    <tbody>
+                        <tr>
+                            <td>Cacique</td>
+                            <td>si</td>
+                            <td>₡1500</td>
+                            <td>si</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cervezas</td>
+                            <td>si</td>
+                            <td>₡1000</td>
+                            <td>no</td>
+                        </tr>
 
-                <h3>Sin Alcohol</h3>
-                <ol>
-                    <li>gaseosas...................................₡1500: &nbsp; Disponible</li>
-                    <li>Freso natural..............................₡2200: &nbsp; Disponible</li>
-                    <li>Energisantes...............................₡1000: &nbsp; Disponible</li>
-                    <li>Agua.......................................₡2200: &nbsp; Disponible</li>
-                </ol>
+                        <tr>
+                            <td>ron</td>
+                            <td>si</td>
+                            <td>₡2200</td>
+                            <td>si</td>
+                        </tr>
+                        <tr>
+                            <td>wiskey</td>
+                            <td>si</td>
+                            <td>₡2200</td>
+                            <td>si</td>
+                        </tr>
+
+                        <tr>
+                            <td>gaseosas</td>
+                            <td>no</td>
+                            <td>₡1500</td>
+                            <td>si</td>
+                        </tr>
+
+                        <tr>
+                            <td>Freso natural</td>
+                            <td>no</td>
+                            <td>₡2200</td>
+                            <td>si</td>
+                        </tr>
+
+                        <tr>
+                            <td>Agua</td>
+                            <td>no</td>
+                            <td>₡1000</td>
+                            <td>si</td>
+                        </tr>
+
+                        <tr>
+                            <td>Energisantes</td>
+                            <td>no</td>
+                            <td>₡2200</td>
+                            <td>si</td>
+                        </tr>
+
+                    </tbody>
+                        <td colspan="4"><strong>El consumo de bebidas alcoholicas es perjudicial para la salud</strong></td>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
             </section>
+                
         </article>
     </main>
 

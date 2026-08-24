@@ -72,7 +72,7 @@ a{
     background-color: #94cddf;
 }
 
-/* Contenido */
+/* Contenido index */
 
 /* presentacion */
 #portada{
@@ -204,6 +204,38 @@ a{
     color: #818181;
     font-weight: 600;
 }
+
+/* fin contenido index */
+
+/* Contenido catalogo */
+
+.indice{
+    margin: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    background-color: #3a7ca536;
+}
+
+.indice h2{
+    font-size: 2rem;
+    color: #3a7ca5;
+}
+
+.indice ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.indice ul li a{
+    color: #3a7ca5;
+    border-bottom: 1px solid #3a7ca536;
+}
+
+
+
+/* fin contenido catalogo */
 
 /* pie pagina */
 #pie{

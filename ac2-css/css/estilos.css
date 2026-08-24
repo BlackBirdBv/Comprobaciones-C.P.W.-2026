@@ -205,3 +205,35 @@ a{
     font-weight: 600;
 }
 
+/* pie pagina */
+#pie{
+    background-color: #2f6690;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.pie-contenido{
+    color: white;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-contacto{
+    font-size: 1.5rem;
+    
+    margin: 2rem 0 4rem;
+}
+
+.datos-contacto a{
+    color: white;
+}
+
+.creditos{
+    border-top: 1px solid #4590be;
+    padding: 2rem 0 0;
+    text-align: center;
+}

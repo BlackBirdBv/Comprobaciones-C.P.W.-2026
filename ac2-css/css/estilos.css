@@ -149,4 +149,32 @@ a{
     padding-top: 1rem;
 }
 
+/* Contenido con cita */
+#historia{
+    max-width: 58rem;
+    margin: 1rem 0 7rem;
+}
+
+#historia h2{
+    color: #3a7ca5;
+    border-bottom: 3px solid #3a7ca5;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+#historia p{
+    padding: 1rem 0;
+}
+
+.cita{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 2rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 0.4rem solid #3a7ca5;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
 

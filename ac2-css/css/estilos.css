@@ -13,6 +13,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     max-width: 120rem;
     margin: 0 auto;
+    background-color: #f6fbff;
 }
 
 h1, h2, h3{
@@ -21,7 +22,7 @@ h1, h2, h3{
 
 h1{
     font-size: 4.0rem;
-    color: white;
+    color: #3a7ca5;
 }
 h2{font-size: 3.0rem;}
 h3{font-size: 2.0rem;}
@@ -38,13 +39,13 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3a7ca5;
+    background-color: white;
     padding: 1.5rem 3rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .marca .lema{
-    color: white;
+    color: #3a7ca5;
 }
 
 .menu-principal ul{
@@ -53,7 +54,7 @@ a{
 }
 
 .menu-principal ul li a{
-    color: white;
+    color: #3a7ca5;
     padding: 1.5rem 1.8rem;
     margin: 0 0.5rem;
     font-size: 1.5rem;
@@ -63,16 +64,89 @@ a{
     transition: background-color 0.3s ease-in-out;
 }
 
-.enlace-activo{
-    background-color: #81c3d7;
-}
-
 .menu-principal ul li a:hover{
-    background-color: #699faf;
+    background-color: #b0deec;
 }
 
-/*  */
+.enlace-activo{
+    background-color: #94cddf;
+}
 
+/* Contenido */
 
+/* presentacion */
+#portada{
+    background-color: #3a7ca5;
+    text-align: center;
+    margin: 3rem 1rem;
+    padding: 12rem 0;
+    border-radius: 1rem;
+}
+
+.hero h2{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-texto{
+    color: white;
+    margin-bottom: 3rem; 
+}
+
+.boton {
+    padding: 1rem 1.5rem;
+}
+
+.boton-principal{
+    background-color: #94cddf;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.boton-principal:hover{
+    background-color: #b0deec;
+}
+
+/* Tres bloques para maquetar en fila */
+
+#servicios h2{
+    color: #3a7ca5;
+    border-bottom: 3px solid #3a7ca5;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.rejilla-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3a7ca5;
+}
+
+.tarjeta h3{
+    color: #3a7ca5;
+}
+
+.tarjeta p{
+    color: #818181;
+}
+
+.tarjeta-pie{
+    font-weight: 700;
+    border-top: 1px solid #818181;
+    padding-top: 1rem;
+}
 
 

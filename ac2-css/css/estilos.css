@@ -1,0 +1,501 @@
+/* Reset y configuraciones generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 120rem;
+    margin: 0 auto;
+    background-color: #f6fbff;
+}
+
+h1, h2, h3{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 4.0rem;
+    color: #3a7ca5;
+}
+h2{font-size: 3.0rem;}
+h3{font-size: 2.0rem;}
+
+p{font-size: 1.5rem;}
+
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* header */
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem 3rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.marca .lema{
+    color: #3a7ca5;
+}
+
+.menu-principal ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu-principal ul li a{
+    color: #3a7ca5;
+    padding: 1.5rem 1.8rem;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-principal ul li a:hover{
+    background-color: #b0deec;
+}
+
+.enlace-activo{
+    background-color: #94cddf;
+}
+
+/* Contenido index */
+
+/* presentacion */
+#portada{
+    background-color: #3a7ca5;
+    text-align: center;
+    margin: 3rem 1rem;
+    padding: 12rem 0;
+    border-radius: 1rem;
+}
+
+.hero h2{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.hero-texto{
+    color: white;
+    margin-bottom: 3rem; 
+}
+
+.boton {
+    padding: 1rem 1.5rem;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.boton-principal{
+    background-color: #94cddf;
+    color: white;
+}
+
+.boton-principal:hover{
+    background-color: #b0deec;
+}
+
+.boton-principal:focus{
+    background-color: #8bafb9;
+}
+
+/* Tres bloques para maquetar en fila */
+#servicios{
+    padding: 1rem 2rem;
+}
+
+#servicios h2{
+    color: #3a7ca5;
+    border-bottom: 3px solid #3a7ca5;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+.rejilla-servicios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid #3a7ca5;
+}
+
+.tarjeta h3{
+    color: #3a7ca5;
+}
+
+.tarjeta p{
+    color: #818181;
+}
+
+.tarjeta-pie{
+    font-weight: 700;
+    border-top: 1px solid #818181;
+    padding-top: 1rem;
+}
+
+/* Contenido con cita */
+#historia{
+    max-width: 58rem;
+    margin: 1rem 0 7rem;
+    padding: 1rem 2rem;
+}
+
+#historia h2{
+    color: #3a7ca5;
+    border-bottom: 3px solid #3a7ca5;
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+
+#historia p{
+    padding: 1rem 0;
+}
+
+.cita{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    margin: 2rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 0.4rem solid #3a7ca5;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cita-autoria{
+    text-align: end;
+}
+
+/* CONTENIDO SECUNDARIO */
+#aviso{
+    width: 100%;
+    background-color: #3a7ca536;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    margin: 5rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: 0.4rem solid #3a7ca5;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.panel-aviso h2{
+    color: #3a7ca5;
+}
+
+.panel-aviso p{
+    color: #818181;
+    font-weight: 600;
+}
+
+/* fin contenido index */
+
+/* Contenido catalogo */
+
+.indice{
+    margin: 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    background-color: #3a7ca536;
+}
+
+.indice h2{
+    font-size: 2rem;
+    color: #3a7ca5;
+}
+
+.indice ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.indice ul li a{
+    color: #3a7ca5;
+    border-bottom: 1px solid #3a7ca536;
+}
+
+/* LA TABLA */
+
+#existencias{
+    margin: 2rem;
+    padding: 1.5rem 0;
+}
+
+#existencias h2{
+    color: #3a7ca5;
+    border-bottom: 2px solid #3a7ca5;
+}
+
+.tabla-catalogo{
+    margin: 3rem 0;
+    width: 100%;
+    font-size: 1.8rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-catalogo caption{
+    text-align: start;
+    color: #3a7ca5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.tabla-catalogo thead{
+    background-color: #3a7ca5;
+    color: white;
+}
+
+.tabla-catalogo thead tr th, 
+.tabla-catalogo tbody tr td, 
+.tabla-catalogo tbody tr th,
+.tabla-catalogo tfoot tr td 
+{
+    padding: 1.5rem;
+    text-align: start;
+}
+
+.tabla-catalogo tbody{
+    background-color: white;
+}
+
+.tabla-catalogo tbody tr:nth-last-child(2){
+    background-color: #94cddf;
+}
+
+.tabla-catalogo tbody tr:nth-last-child(4){
+    background-color: #94cddf;
+}
+
+.tabla-catalogo tbody tr:nth-last-child(6){
+    background-color: #94cddf;
+}
+
+.tabla-catalogo tbody tr:nth-last-child(4){
+    background-color: #94cddf;
+}
+
+.tabla-catalogo tbody tr:nth-last-child(2){
+    background-color: #94cddf;
+}
+
+.tabla-catalogo tbody tr th{color: #3a7ca5;}
+
+.tabla-catalogo tfoot{
+    background-color: #3a7ca536;
+}
+
+.tabla-catalogo tfoot tr td {
+    border-top: 2px solid #2f6690;
+}
+
+/* LISTAS */
+
+#categorias h2{
+    color: #3a7ca5;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: 2px solid #3a7ca5;
+}
+
+.lista-categorias {
+    font-size: 1.5rem;
+}
+
+.lista-categorias li{
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+#categorias h3{
+    color: #3a7ca5;
+    margin-top: 2rem;
+}
+
+.glosario{
+    background-color: white;
+    font-size: 1.8rem;
+    padding: 3rem;
+    border: 1px solid #3a7ca5;
+    border-radius: 1rem;
+}
+
+.glosario dt{
+    color: #3a7ca5;
+    font-weight: 700;
+}
+
+.glosario dd{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* EL FORMULARIO */
+
+#pedido h2{
+    color: #3a7ca5;
+    border-bottom: 3px solid #3a7ca5;
+    margin: 3rem 0;
+}
+
+    
+.formulario-pedido{
+    max-width: 70rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grupo-campos{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #3a7ca5;
+}
+
+.grupo-campos legend{
+    color: #3a7ca5;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.campo input{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94cddf;
+}
+
+.campo input:focus{
+    outline: none;
+}
+
+.campo input:valid:not(:placeholder-shown){
+    outline: 2px solid #0ea300;
+}
+
+.campo input:invalid:not(:placeholder-shown){
+    outline: 2px solid #d40303;
+}
+
+.campo select{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94cddf;
+}
+
+.grupo-opciones {
+    border: none;
+}
+
+.opcion{
+    margin: 1rem 0;
+}
+
+.campo textarea{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94cddf;
+}
+
+.grupo-botones{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.boton-secundario:hover{
+    background-color: #d9d9d9;
+}
+
+.boton-secundario:focus{
+    background-color: #949494;
+}
+
+
+.volver{
+    max-width: 70rem;
+    text-align: end;
+    margin: 5rem 0;
+}
+
+.volver a{
+    color: #4590be;
+}
+
+/* fin contenido catalogo */
+
+/* pie pagina */
+#pie{
+    background-color: #2f6690;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.pie-contenido{
+    color: white;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 5rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos-contacto{
+    font-size: 1.5rem;
+    
+    margin: 2rem 0 4rem;
+}
+
+.datos-contacto a{
+    color: white;
+}
+
+.creditos{
+    border-top: 1px solid #4590be;
+    padding: 2rem 0 0;
+    text-align: center;
+}
+

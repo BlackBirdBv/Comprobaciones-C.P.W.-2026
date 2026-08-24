@@ -182,6 +182,10 @@ a{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+.cita-autoria{
+    text-align: end;
+}
+
 /* CONTENIDO SECUNDARIO */
 #aviso{
     width: 100%;
@@ -233,6 +237,66 @@ a{
     border-bottom: 1px solid #3a7ca536;
 }
 
+/* LA TABLA */
+
+#existencias{
+    margin: 2rem;
+    padding: 1.5rem 0;
+}
+
+#existencias h2{
+    color: #3a7ca5;
+    border-bottom: 2px solid #3a7ca5;
+}
+
+.tabla-catalogo{
+    margin: 3rem 0;
+    width: 100%;
+    font-size: 1.8rem;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-catalogo caption{
+    text-align: start;
+    color: #3a7ca5;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.tabla-catalogo thead{
+    background-color: #3a7ca5;
+    color: white;
+}
+
+.tabla-catalogo thead tr th, 
+.tabla-catalogo tbody tr td, 
+.tabla-catalogo tbody tr th,
+.tabla-catalogo tfoot tr td 
+{
+    padding: 1.5rem;
+    text-align: start;
+}
+
+.tabla-catalogo tbody{
+    background-color: white;
+}
+
+/* .tabla-catalogo tbody tr th :first-child{
+    background-color: #94cddf;
+} */
+
+.tabla-catalogo tbody tr th{color: #3a7ca5;}
+
+.tabla-catalogo tfoot{
+    background-color: #3a7ca536;
+}
+
+.tabla-catalogo tfoot tr td {
+    border-top: 2px solid #2f6690;
+}
+
+/* LISTAS */
 
 
 /* fin contenido catalogo */
@@ -269,3 +333,4 @@ a{
     padding: 2rem 0 0;
     text-align: center;
 }
+

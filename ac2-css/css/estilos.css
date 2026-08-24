@@ -95,13 +95,15 @@ a{
 
 .boton {
     padding: 1rem 1.5rem;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 0.5rem;
+    font-weight: 500;
 }
 
 .boton-principal{
     background-color: #94cddf;
     color: white;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .boton-principal:hover{
@@ -337,7 +339,93 @@ a{
     margin-bottom: 2rem;
 }
 
-/*  */
+/* EL FORMULARIO */
+
+#pedido h2{
+    color: #3a7ca5;
+    border-bottom: 3px solid #3a7ca5;
+    margin: 3rem 0;
+}
+
+    
+.formulario-pedido{
+    max-width: 70rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.grupo-campos{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #3a7ca5;
+}
+
+.grupo-campos legend{
+    color: #3a7ca5;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.campo input{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94cddf;
+}
+
+.campo select{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94cddf;
+}
+
+.grupo-opciones {
+    border: none;
+}
+
+.opcion{
+    margin: 1rem 0;
+}
+
+.campo textarea{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #94cddf;
+}
+
+.grupo-botones{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.boton-secundario:hover{
+    background-color: #d9d9d9;
+}
+
+.volver{
+    max-width: 70rem;
+    text-align: end;
+    margin: 5rem 0;
+}
+
+.volver a{
+    color: #4590be;
+}
 
 /* fin contenido catalogo */
 

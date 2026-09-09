@@ -629,6 +629,7 @@ img {
   h3 { font-size: 1.8rem; }
 
   /* CABECERA */
+
   .cabecera{
     flex-wrap: wrap;
     gap: 2rem;
@@ -670,8 +671,37 @@ img {
 
   .cita-texto {font-size: 2rem;}
   .cita-autoria {font-size: 1.2rem;}
+
+  /* ÍNDICE INTERNO  */
+
+  .indice-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* TABLA */
+
+  .tabla thead th, 
+  .tabla tbody th,
+  .tabla tbody td,
+  .tabla tfoot td{
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
 
+@media (max-width:450) {
+  
+  /* TABLA */
+
+  .tabla thead th, 
+  .tabla tbody th,
+  .tabla tbody td,
+  .tabla tfoot td{
+    font-size: 0.6rem;
+    padding: 0.5rem 0.3rem;
+  }
+}
 
 /* Pantallas tablet 400px*/
 
@@ -692,6 +722,16 @@ img {
   .cita{padding: 2rem;}
   .cita-texto {font-size: 1.5rem;}
   .cita-autoria {font-size: 0.8rem;}
+
+  /* TABLA */
+
+  .tabla thead th, 
+  .tabla tbody th,
+  .tabla tbody td,
+  .tabla tfoot td{
+    font-size: 0.7rem;
+    padding: 1rem 0.5rem;
+  }
 
   /* BOTONES */
 

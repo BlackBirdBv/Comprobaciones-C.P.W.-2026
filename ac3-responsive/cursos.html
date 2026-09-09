@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <meta name="author" content="Kevin Moises Cardenas Blandon">
   <meta name="description" content="Talleres de cocina, panadería y repostería: contenidos, horarios y tarifas.">
   <meta name="keywords" content="talleres, cursos, cocina, panadería, repostería">
@@ -11,6 +13,8 @@
 
   <link rel="icon" href="recursos/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 
 <body>
@@ -30,8 +34,12 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
+      <input type="checkbox" id="abrir-menu" class="menu-control">
+      <label for="abrir-menu" class="menu-boton">
+        <i class="fi fi-br-menu-burger"></i>
+      </label>
       <ul class="menu">
-        <li><a href="index.html" class="menu-enlace">Inicio</a></li>
+        <li><a href="index.html" class="menu-enlace ">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace activo">Cursos</a></li>
         <li><a href="contacto.html" class="menu-enlace">Contacto</a></li>
       </ul>

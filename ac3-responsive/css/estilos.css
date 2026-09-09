@@ -97,7 +97,7 @@ img {
 }
 
 .seccion-entrada {
-  width: 640px;
+  max-width: 640px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -294,7 +294,7 @@ img {
 .cita {
   max-width: 720px;
   margin: 0 auto;
-  padding: 44px;
+  padding: 4.4rem;
   background-color: var(--blanco);
   border-left: 5px solid var(--terracota);
   border-radius: var(--radio);
@@ -617,7 +617,23 @@ img {
   margin-bottom: 0;
 }
 
+/* MEDIAQUERIES */
+/* Pantallas tablet 768px*/
+
 @media (max-width:767px) {
+
+  /* BASE */
+
+  h1 { font-size: 4rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 1.8rem; }
+
+  /* CABECERA */
+  .cabecera{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -630,6 +646,7 @@ img {
     opacity: 0;
     width: 0.1rem;
     height: 0.1rem;
+    text-align: end;
   }
   
   .menu-control:checked ~ .menu{
@@ -648,4 +665,35 @@ img {
   .menu-boton i{
     font-size: 3rem;
   }
+
+  /* CITA */
+
+  .cita-texto {font-size: 2rem;}
+  .cita-autoria {font-size: 1.2rem;}
+}
+
+
+/* Pantallas tablet 400px*/
+
+@media (max-width:399px) {
+
+  /* BASE */
+
+  h1 { font-size: 2.6rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.4rem; }
+
+  /* PORTADA */
+
+  .portada-bajada {font-size: 1.4rem;} 
+
+  /* CITA */
+
+  .cita{padding: 2rem;}
+  .cita-texto {font-size: 1.5rem;}
+  .cita-autoria {font-size: 0.8rem;}
+
+  /* BOTONES */
+
+  .boton{padding: 0.5rem 1.8rem;}
 }

@@ -74,7 +74,7 @@ img {
 
 /* ─── CONTENEDORES ───────────────────────────────────────────────────── */
 .seccion {
-  width: 1180px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
   padding: 90px 30px;
@@ -86,7 +86,7 @@ img {
 }
 
 .seccion-alterna > * {
-  width: 1180px;
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -106,7 +106,7 @@ img {
 }
 
 .pagina-encabezado {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 80px 30px 48px;
   text-align: center;
@@ -214,7 +214,9 @@ img {
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
   display: flex;
-  gap: 26px;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .tarjeta {
@@ -251,7 +253,7 @@ img {
 /* ─── GALERÍA · Grid ─────────────────────────────────────────────────── */
 .rejilla-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 18px;
 }
 

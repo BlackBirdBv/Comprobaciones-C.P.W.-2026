@@ -190,7 +190,7 @@ img {
 /* ─── PORTADA ────────────────────────────────────────────────────────── */
 .portada {
   background-color: var(--verde);
-  background-image: url('../recursos/portada_grande.jpg');
+  background-image: url('../recursos/portada.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -242,6 +242,8 @@ img {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.tarjeta p{font-size: 1.4rem;}
+
 .tarjeta:hover {
   transform: translateY(-5px);
   box-shadow: var(--sombra-alta);
@@ -254,7 +256,7 @@ img {
 .tarjeta-dato {
   font-weight: 700;
   color: var(--verde);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
   padding-top: 14px;
   border-top: 1px solid var(--linea);
@@ -634,9 +636,9 @@ img {
 
 /* MEDIAQUERIES */
 
-/* Pantallas tablet 768px*/
+/* Pantallas tablet 768px a mas+*/
 
-@media (min-width:767px) {
+@media (min-width:768px) {
 
   /* BASE */
 
@@ -667,8 +669,10 @@ img {
 
   /* TARJETAS */
 
+  #propuestas .tarjeta p{font-size: 1.8rem;}
   .tarjeta-titulo{font-size: 2.2rem;}
   .tarjeta-texto{font-size: 1.8rem;}
+  .tarjeta-dato {font-size: 12rem;}
 
   /* CITA */
 
@@ -694,8 +698,10 @@ img {
 
    /* DOS COLUMNAS */
 
-  .dos-columnas {
+  #requisitos .dos-columnas {
+    display: flex;
     justify-content: space-around;
+    gap: 2rem;
   }
 
   /* seccion intro */
@@ -715,7 +721,7 @@ img {
 }
 
 
-/* Pantallas tablet 400px*/
+/* Pantallas 400px a 768px*/
 
 @media (min-width:400px) {
 
@@ -742,6 +748,11 @@ img {
   .portada-caja{
     padding: 3rem;
   }
+
+  /* TARJETAS */
+
+  .tarjeta p{font-size: 1.6rem;}
+  .tarjeta-dato {  font-size: 1.6rem;}
 
   /* LISTAS */
 

@@ -184,7 +184,7 @@ img {
 /* ─── PORTADA ────────────────────────────────────────────────────────── */
 .portada {
   background-color: var(--verde);
-  background-image: url('../recursos/portada.jpg');
+  background-image: url('../recursos/portada_grande.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -385,12 +385,14 @@ img {
   display: flex;
   gap: 44px;
   align-items: flex-start;
+  justify-content: space-around;
 }
 
-.columna        { width: 560px; }
-.columna-figura { width: 560px; margin: 0; }
+.columna        { max-width: 560px; }
+.columna-figura { max-width: 560px; margin: 0; }
 
 .columna-figura img {
+  height: auto;
   width: 100%;
   border-radius: var(--radio);
   box-shadow: var(--sombra);
@@ -635,7 +637,21 @@ img {
     gap: 2rem;
   }
 
-  .menu {
+  .navegacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .menu{
+    flex-direction: row;
+  }
+
+  .dos-columnas{
+    flex-direction: column;
+  }
+
+  /* .menu {
     display: none;
     flex-direction: column;
     gap: 0;
@@ -661,7 +677,7 @@ img {
     align-items: center;
     gap: 1rem;
     cursor: pointer;
-  }
+  } */
 
   .menu-boton i{
     font-size: 3rem;
@@ -690,6 +706,12 @@ img {
   }
 }
 
+@media (max-width:620px) {
+  .cabecera{
+    justify-content: center;
+  }
+}
+
 @media (max-width:450) {
   
   /* TABLA */
@@ -713,6 +735,10 @@ img {
   h2 { font-size: 2rem; }
   h3 { font-size: 1.4rem; }
 
+  /* CONTENEDORES */
+
+  .pagina-bajada{font-size: 1.5rem;}
+
   /* PORTADA */
 
   .portada-bajada {font-size: 1.4rem;} 
@@ -733,6 +759,14 @@ img {
     padding: 1rem 0.5rem;
   }
 
+  /* LISTAS */
+
+   .direccion{font-size: 1.5rem;}
+
+   /* FORMULARIO */
+  
+  .campo-entrada {padding: 0.8rem;}
+  
   /* BOTONES */
 
   .boton{padding: 0.5rem 1.8rem;}

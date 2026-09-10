@@ -14,7 +14,6 @@
   <link rel="icon" href="recursos/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/estilos.css">
 
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 </head>
 
 <body>
@@ -34,10 +33,6 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
-      <input type="checkbox" id="abrir-menu" class="menu-control">
-      <label for="abrir-menu" class="menu-boton">
-        <i class="fi fi-br-menu-burger"></i>
-      </label>
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace">Inicio</a></li>
         <li><a href="cursos.html" class="menu-enlace">Cursos</a></li>
@@ -179,9 +174,14 @@
         </div>
 
         <figure class="columna-figura">
-          <img src="recursos/fachada.jpg"
+          <picture>
+            <source media="(min-width:1024px)" srcset="recursos/fachada_grande.jpg">
+            <source media="(min-width:768px)" srcset="recursos/fachada_mediana.jpg">
+            <source media="(min-width:480px)" srcset="recursos/fachada_pequeña.jpg">
+            <img src="recursos/fachada_pequeña.jpg"
                alt="Fachada de la escuela con su rótulo de madera"
                width="1200" height="900">
+          </picture>
           <figcaption class="figura-pie">La entrada está sobre la calle 7</figcaption>
         </figure>
 

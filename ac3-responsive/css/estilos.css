@@ -115,7 +115,7 @@ img {
 }
 
 .pagina-titulo   { margin-bottom: 10px; }
-.pagina-bajada   { color: var(--suave); font-size: 0.6rem;}
+.pagina-bajada   { color: var(--suave); font-size: 1rem;}
 .subtitulo       { margin-top: 28px; margin-bottom: 10px; }
 
 
@@ -204,7 +204,7 @@ img {
 
 .portada-caja {
   background-color: rgba(0, 0, 0, 0.48);
-  padding: 48px;
+  padding: 2.5rem;
   border-radius: var(--radio);
   max-width: 720px;
 }
@@ -220,6 +220,7 @@ img {
   margin-bottom: 28px;
 }
 
+#portada .portada-bajada{font-size: 1.5rem;}
 
 /* ─── TARJETAS · Flexbox ─────────────────────────────────────────────── */
 .fila-propuestas {
@@ -458,6 +459,8 @@ img {
 
 
 /* ─── FORMULARIO ─────────────────────────────────────────────────────── */
+  #intro .pagina-bajada{font-size: 1.4rem;}
+
 .formulario {
   max-width: 720px;
   margin: 0 auto;
@@ -481,7 +484,7 @@ img {
 
 .grupo-opciones {
   border: none;
-  padding: 14px 0 0;
+  padding: 1rem 0 0;
   margin-bottom: 0;
 }
 
@@ -496,7 +499,7 @@ img {
 
 .campo-entrada {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.5rem;
   border: 1px solid var(--linea);
   border-radius: var(--radio);
   font-size: 1.7rem;
@@ -631,12 +634,6 @@ img {
 
 /* MEDIAQUERIES */
 
-/* pantallas escritorio */
-/* @media (min-width:1024) {
-  
-} */
-
-
 /* Pantallas tablet 768px*/
 
 @media (min-width:767px) {
@@ -656,6 +653,22 @@ img {
   .cabecera{
     justify-content: space-between;
   }
+
+  .portada-titulo{font-size: 5rem;}
+  .seccion-titulo{font-size: 3.2rem;}
+
+  /* PORTADA */
+  
+  .portada-caja{
+    padding: 4.8rem;
+  }
+
+  #portada .portada-bajada{font-size: 2rem;}
+
+  /* TARJETAS */
+
+  .tarjeta-titulo{font-size: 2.2rem;}
+  .tarjeta-texto{font-size: 1.8rem;}
 
   /* CITA */
 
@@ -685,47 +698,19 @@ img {
     justify-content: space-around;
   }
 
+  /* seccion intro */
+
+  #intro .pagina-bajada{font-size: 1.6rem;}
+
    /* FORMULARIO */
+
+  .grupo-opciones{padding:1.4rem 0 0;}
 
   .campo-entrada {padding: 11px 15px;}
 
   /* BOTONES */
 
   .boton{padding: 13px 28px;}
-
-
-/* 
-  /* .menu {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    list-style: none;
-  }
-
-  .menu-control{
-    position: absolute;
-    opacity: 0;
-    width: 0.1rem;
-    height: 0.1rem;
-    text-align: end;
-  }
-  
-  .menu-control:checked ~ .menu{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu-boton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    cursor: pointer;
-  } */
-
-  /* .menu-boton i{
-    font-size: 3rem;
-  } */
 
 }
 
@@ -750,6 +735,12 @@ img {
   .tabla tfoot td{
     font-size: 1rem;
     padding: 1rem 0.5rem;
+  }
+
+  /* PORTADA */
+  
+  .portada-caja{
+    padding: 3rem;
   }
 
   /* LISTAS */

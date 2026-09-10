@@ -57,9 +57,11 @@ h1, h2, h3 {
   color: var(--verde);
 }
 
-h1 { font-size: 5.2rem; }
-h2 { font-size: 3.4rem; }
-h3 { font-size: 2.2rem; }
+h1 { font-size: 2.6rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.4rem; }
+
+
 
 p { margin-bottom: 18px; }
 
@@ -113,20 +115,22 @@ img {
 }
 
 .pagina-titulo   { margin-bottom: 10px; }
-.pagina-bajada   { color: var(--suave); font-size: 1.9rem; }
+.pagina-bajada   { color: var(--suave); font-size: 0.6rem;}
 .subtitulo       { margin-top: 28px; margin-bottom: 10px; }
 
 
 /* ─── CABECERA ───────────────────────────────────────────────────────── */
 .cabecera {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1180px;
   margin: 0 auto;
   padding: 18px 30px;
   background-color: var(--blanco);
   border-bottom: 1px solid var(--linea);
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .marca {
@@ -147,6 +151,8 @@ img {
 .navegacion {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .menu {
@@ -294,7 +300,7 @@ img {
 .cita {
   max-width: 720px;
   margin: 0 auto;
-  padding: 4.4rem;
+  padding: 2rem;
   background-color: var(--blanco);
   border-left: 5px solid var(--terracota);
   border-radius: var(--radio);
@@ -303,14 +309,14 @@ img {
 
 .cita-texto {
   font-family: var(--fuente-titulo);
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-style: italic;
   line-height: 1.5;
 }
 
 .cita-autoria {
   color: var(--suave);
-  font-size: 1.5rem;
+  font-size: 0.8rem;
   text-align: right;
 }
 
@@ -328,6 +334,8 @@ img {
   display: flex;
   gap: 26px;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .indice-lista a {
@@ -347,24 +355,25 @@ img {
 }
 
 .tabla-titulo {
-  padding: 16px;
+  padding: 1rem 0.5rem;
   font-weight: 600;
   text-align: left;
   color: var(--suave);
-  font-size: 1.5rem;
+  font-size: 0.7rem;
 }
 
 .tabla th,
 .tabla td {
-  padding: 15px;
+  padding: 1rem 0.5rem;
   border-bottom: 1px solid var(--linea);
   text-align: left;
+  font-size: 0.7rem;
 }
 
 .tabla thead th {
   background-color: var(--verde);
   color: var(--blanco);
-  font-size: 1.5rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -375,7 +384,7 @@ img {
 .tabla tfoot td {
   background-color: var(--crema-alt);
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 0.7rem;
   border-top: 2px solid var(--verde);
 }
 
@@ -383,9 +392,10 @@ img {
 /* ─── DOS COLUMNAS · Flexbox ─────────────────────────────────────────── */
 .dos-columnas {
   display: flex;
-  gap: 44px;
+  gap: 3rem;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .columna        { max-width: 560px; }
@@ -486,7 +496,7 @@ img {
 
 .campo-entrada {
   width: 100%;
-  padding: 11px 15px;
+  padding: 0.8rem;
   border: 1px solid var(--linea);
   border-radius: var(--radio);
   font-size: 1.7rem;
@@ -535,7 +545,7 @@ img {
 /* ─── BOTONES ────────────────────────────────────────────────────────── */
 .boton {
   display: inline-block;
-  padding: 13px 28px;
+  padding: 0.5rem 1.8rem;
   border: none;
   border-radius: var(--radio);
   font-family: inherit;
@@ -620,37 +630,71 @@ img {
 }
 
 /* MEDIAQUERIES */
+
+/* pantallas escritorio */
+/* @media (min-width:1024) {
+  
+} */
+
+
 /* Pantallas tablet 768px*/
 
-@media (max-width:767px) {
+@media (min-width:767px) {
 
   /* BASE */
 
-  h1 { font-size: 4rem; }
-  h2 { font-size: 3rem; }
-  h3 { font-size: 1.8rem; }
+  h1 { font-size: 5.2rem; }
+  h2 { font-size: 3.4rem; }
+  h3 { font-size: 2.2rem; }
+
+  /* CONTENEDORES */
+
+  .portada-bajada {font-size: 2rem;} 
 
   /* CABECERA */
 
   .cabecera{
-    flex-wrap: wrap;
-    gap: 2rem;
+    justify-content: space-between;
   }
 
-  .navegacion{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  /* CITA */
+
+  .cita{padding: 4.4rem;}
+  .cita-texto {font-size: 2.3rem;}
+  .cita-autoria {font-size: 1.5rem;}
+
+  /* TABLA */
+
+  .tabla thead tr th, 
+  .tabla tbody tr th,
+  .tabla tbody tr td,
+  .tabla tfoot tr td{
+    font-size: 1.6rem;
+    padding: 1.5rem;
   }
 
-  .menu{
-    flex-direction: row;
+  /* ÍNDICE INTERNO  */
+
+  .indice-lista {
+    justify-content: flex-start;
   }
 
-  .dos-columnas{
-    flex-direction: column;
+   /* DOS COLUMNAS */
+
+  .dos-columnas {
+    justify-content: space-around;
   }
 
+   /* FORMULARIO */
+
+  .campo-entrada {padding: 11px 15px;}
+
+  /* BOTONES */
+
+  .boton{padding: 13px 28px;}
+
+
+/* 
   /* .menu {
     display: none;
     flex-direction: column;
@@ -679,95 +723,37 @@ img {
     cursor: pointer;
   } */
 
-  .menu-boton i{
+  /* .menu-boton i{
     font-size: 3rem;
-  }
+  } */
 
-  /* CITA */
+}
 
-  .cita-texto {font-size: 2rem;}
-  .cita-autoria {font-size: 1.2rem;}
 
-  /* ÍNDICE INTERNO  */
+/* Pantallas tablet 400px*/
 
-  .indice-lista {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+@media (min-width:400px) {
+
+  /* BASE */
+
+  h1 { font-size: 4rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 1.8rem; }
 
   /* TABLA */
+
+  .tabla-titulo{font-size: 1rem;}
 
   .tabla thead th, 
   .tabla tbody th,
   .tabla tbody td,
   .tabla tfoot td{
     font-size: 1rem;
-    padding: 1rem;
-  }
-}
-
-@media (max-width:620px) {
-  .cabecera{
-    justify-content: center;
-  }
-}
-
-@media (max-width:450) {
-  
-  /* TABLA */
-
-  .tabla thead th, 
-  .tabla tbody th,
-  .tabla tbody td,
-  .tabla tfoot td{
-    font-size: 0.6rem;
-    padding: 0.5rem 0.3rem;
-  }
-}
-
-/* Pantallas tablet 400px*/
-
-@media (max-width:399px) {
-
-  /* BASE */
-
-  h1 { font-size: 2.6rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.4rem; }
-
-  /* CONTENEDORES */
-
-  .pagina-bajada{font-size: 1.5rem;}
-
-  /* PORTADA */
-
-  .portada-bajada {font-size: 1.4rem;} 
-
-  /* CITA */
-
-  .cita{padding: 2rem;}
-  .cita-texto {font-size: 1.5rem;}
-  .cita-autoria {font-size: 0.8rem;}
-
-  /* TABLA */
-
-  .tabla thead th, 
-  .tabla tbody th,
-  .tabla tbody td,
-  .tabla tfoot td{
-    font-size: 0.7rem;
     padding: 1rem 0.5rem;
   }
 
   /* LISTAS */
 
-   .direccion{font-size: 1.5rem;}
+  .direccion{font-size: 1.5rem;}
 
-   /* FORMULARIO */
-  
-  .campo-entrada {padding: 0.8rem;}
-
-  /* BOTONES */
-
-  .boton{padding: 0.5rem 1.8rem;}
 }
